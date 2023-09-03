@@ -27,7 +27,7 @@ export const parseRss = async (csvList: CsvFormat[]): Promise<RssFormat[]> => {
         userName: feed.title,
         movie: yesterdayUpdatedVideo.map((m) => ({
           title: m.title!,
-          link: m.link!,
+          link: '<' + m.link! + '>',
           date: format(new Date(m.pubDate!), 'yyyy/MM/dd HH:mm'),
         })),
       });

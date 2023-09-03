@@ -27,11 +27,6 @@ export const sendDiscord = async (parsedRss: RssFormat[]) => {
     const req: DiscordWebhook = {
       username: format(subDays(new Date(), 1), 'M月d日') + 'の更新 #' + ++i,
       content: requestContent,
-      embeds: [
-        {
-          title: '.',
-        },
-      ],
     };
 
     await fetch(DISCORD_WEBHOOK_URL, {
