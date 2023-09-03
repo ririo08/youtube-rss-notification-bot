@@ -6,7 +6,7 @@ import { RssFormat } from '../types/RssFormat';
 export const sendDiscord = async (parsedRss: RssFormat[]) => {
   const content: string[] = [];
   for (const user of parsedRss) {
-    content.push('## ' + user.userName);
+    content.push('## :red_circle: ' + user.userName);
     for (const movie of user.movie) {
       content.push(movie.title + '\r' + movie.link + '\r');
     }
