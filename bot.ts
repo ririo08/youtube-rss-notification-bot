@@ -5,7 +5,7 @@ import { main, logError } from './main';
 
 const BaseLogic = async () => {
   console.log(`Start Running...`);
-  cron.schedule('0 3 * * *', function () {
+  cron.schedule('0 1 * * *', function () {
     main();
   });
 };
