@@ -2,7 +2,7 @@
   "name": "discord-youtube-notification-bot",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node bot"
+    "start": "bun bot.ts"
   },
   "main": "main.js",
   "repository": "https://github.com/ririo08/discord-youtube-notification-bot",
@@ -17,8 +17,6 @@
     "fs-extra": "^10.1.0",
     "node-cron": "^3.0.2",
     "papaparse": "^5.4.1",
-    "rss-parser": "^3.13.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "rss-parser": "^3.13.0"
   }
 }

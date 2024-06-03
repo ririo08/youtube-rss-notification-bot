@@ -1,4 +1,4 @@
-import * as RssParser from 'rss-parser';
+import RssParser from 'rss-parser';
 import { format, addHours, subDays } from 'date-fns';
 import { CsvFormat } from '../types/CsvFormat';
 import { ja } from 'date-fns/locale';
